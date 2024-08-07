@@ -48,15 +48,19 @@ footer {
 footer div{
   display: flex;
   flex-direction: column;
+  gap: 0.5rem;  
 }
-footer h2{
+
+footer h1 {
+  font-size: 0.9rem;
+  font-weight: 200;
+}
+
+
+footer h2 {
   font-size: 1.4rem;
 }
 
-footer h1{
-  font-size: 0.9 rem;
-  font-weight: 200;
-}
 
 footer button {
   background: transparent;
@@ -113,6 +117,11 @@ footer button:hover {
   background: #030615;
 }
 
+.sidebarContents h2 {
+  font-weight: 200;
+  font-size: 1.4rem;
+}
+
 .sidebarContents div {
   flex: 1;
 }
@@ -127,6 +136,42 @@ footer button:hover {
   padding: 1rem 0;
 }
 
+.sidebarContents button:hover{
+  opacity: 0.7;
+
+}
+
+.descriptionContainer{
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.descriptionTitle{
+  font-size: 1.1rem;
+  font-weight: 200;
+}
+
+.loadingState {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+}
+
+.loadingState i{
+  opacity: 0.2;
+  font-size: 6rem;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  from{
+    transform: rotate(0deg);
+  }
+  to{
+    transform: rotate(360deg);
+  }
+}
 
 @media (min-width: 640px) {
   .sideBar{
